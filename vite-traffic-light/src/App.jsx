@@ -1,6 +1,6 @@
 import React from "react";
 import TrafficLight from "./components/TrafficLight";
-
+import './app.css'
 const App = () => {
     return (
         <div className="App">
