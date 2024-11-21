@@ -1,0 +1,61 @@
+/* Center the root container */
+#root {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Ensures the container takes the full height of the viewport */
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Optional: Sets a darker background for contrast */
+  text-align: center;
+  justify-content: center;
+}
+
+/* Existing styles for the traffic light component */
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/* Existing styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
